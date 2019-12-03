@@ -32,19 +32,19 @@ python tools/test_lanenet.py --weights_path ./model/tusimple_lanenet_vgg/tusimpl
 
 `Test Input Image`
 
-![a](H:\real_work\LanNet_车道检测\lanenet-lane-detection-master\README\a.jpg)
+![a](./README/a.jpg)
 
 `Test Lane Mask Image`
 
-![lanenet_mask_result](H:\real_work\LanNet_车道检测\lanenet-lane-detection-master\README\lanenet_mask_result.png)
+![lanenet_mask_result](./README/lanenet_mask_result.png)
 
 `Test Lane Binary Segmentation Image`
 
-![lanenet_binary_seg](H:\real_work\LanNet_车道检测\lanenet-lane-detection-master\README\lanenet_binary_seg.png)
+![lanenet_binary_seg](./README/lanenet_binary_seg.png)
 
 `Test Lane Instance Segmentation Image`
 
-![lanenet_instance_seg](H:\real_work\LanNet_车道检测\lanenet-lane-detection-master\README\lanenet_instance_seg.png)
+![lanenet_instance_seg](./README/lanenet_instance_seg.png)
 
 如果要在整个tusimple测试数据集上评估模型，可以调用如果设置save_dir参数，结果将保存在该文件夹中，或者结果将不会保存，而是在推理过程中显示（每张图像3秒钟）。我在整个tusimple车道检测数据集上测试了该模型，并将其制作为视频。您可能会瞥见它。
 
@@ -53,7 +53,7 @@ python tools/evaluate_lanenet_on_tusimple.py --image_dir /home/DataSet/CV/lanene
 ```
 
 `Tusimple test dataset gif`
-![lanenet_batch_test](H:\real_work\LanNet_车道检测\lanenet-lane-detection-master\README\lanenet_batch_test.gif)
+![lanenet_batch_test](./README/lanenet_batch_test.gif)
 
 ## Trainyour own model
 
@@ -63,7 +63,7 @@ python tools/evaluate_lanenet_on_tusimple.py --image_dir /home/DataSet/CV/lanene
 
 1. 首先按照链接下载 [Tusimple](https://github.com/TuSimple/tusimple-benchmark/issues/3) 数据集：train_set.zip  test_set.zip test_label.json
 2. 调用 tools/generate_tusimple_dataset.py 将原始数据转换格式
-   ![2019-11-28_100446](H:\real_work\LanNet_车道检测\lanenet-lane-detection-master\README\2019-11-28_100446.jpg)
+   ![2019-11-28_100446](./README/2019-11-28_100446.jpg)
 
 这里会生成 train.txt 和 val.txt，调整格式如下：
 
@@ -105,18 +105,18 @@ python tools/train_lanenet.py
 您可以使用**张量板**工具监视训练过程：
 
 在我的实验过程中 `Total loss` 如下:  
-![total_loss](H:\real_work\LanNet_车道检测\lanenet-lane-detection-master\README\total_loss.png)
+![total_loss](./README/total_loss.png)
 
 该`Binary Segmentation loss` 下降如下:  
-![binary_seg_loss](H:\real_work\LanNet_车道检测\lanenet-lane-detection-master\README\binary_seg_loss.png)
+![binary_seg_loss](./README/binary_seg_loss.png)
 
 该 `Instance Segmentation loss` 下降如下:  
-![instance_seg_loss](H:\real_work\LanNet_车道检测\lanenet-lane-detection-master\README\instance_seg_loss.png)
+![instance_seg_loss](./README/instance_seg_loss.png)
 
 ## Experiment
 
 训练过程中的准确性提高如下：
-![accuracy](H:\real_work\LanNet_车道检测\lanenet-lane-detection-master\README\accuracy.png)
+![accuracy](./README/accuracy.png)
 
 ## Recently updates 2018.11.10
 
