@@ -5,7 +5,7 @@
 主要的网络架构如下：
 
 `Network Architecture`
-![2019-11-27_212604](H:\real_work\LanNet_车道检测\lanenet-lane-detection-master\README\2019-11-27_212604-1575372052560.jpg)
+![2019-11-27_212604](README\2019-11-27_212604-1575372052560.jpg)
 
 ## Installation
 
